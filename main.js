@@ -16,6 +16,17 @@ var triangleType=function(sideOne,sideTwo,sideThree){
         return "equilateral";
     } else if(sideOne=sideTwo || sideTwo==sideThree){
         return "isosceles";
+    }  else {
+        return "scalene";
     }
     
+};
+
+// user logic
+$(document).ready(function(){
+    $("form".tri).submit(function(event){
+       let sideOne=parseInt($("input#sideOne").val());
+       let sideTwo=parseInt($("input#sideTwo").val());
+       let sideThree=parseInt($("input#sideThree").val());
+    })
 }
